@@ -1,0 +1,45 @@
+Utilisation des bibliothèques Java
+a) Donner le nom et le type des paramètres des méthodes getConnection de la classe DriverManager.
+				       TYPE      NOM
+static Connection	getConnection(String     url) 
+static Connection	getConnection(String     url,
+				      Properties info) 
+static Connection	getConnection(String     url, 
+				      String     user, 
+				      String     password) 
+
+b) A quoi sert la méthode next de l'interface ResultSet ?
+Deplace le curseur d'une position à partir de sa position courante.
+
+c) A quoi sert la méthode setMaxRows de l’interface Statement ?
+Définit la limite pour le nombre maximum de lignes que tout objet ResultSet généré par cet objet Statement peut contenir au numéro donné
+
+d) Quelles sont les sous­interfaces de l’interface Statement ?
+CallableStatement, PreparedStatement
+
+3 Requête générique
+3.1)Quel est le rôle de l’interface ResultSetMetaData et de sa méthode getColumnCount ?
+ResultSetMetaData : Un objet qui peut être utilisé pour obtenir des informations sur les types et les propriétés des colonnes dans un objet ResultSet
+getColumnCount : retourne le nombre colonne d'un objet ResultSet
+
+4 Schéma d’une relation
+4.1)Quel est le rôle de l’interface DatabaseMetaData et comment obtenir une instance de ce type à partir d’une 
+connexion ? 
+ DatabaseMetaData	getMetaData()
+Récupère un objet DatabaseMetaData qui contient des métadonnées sur la base de données à laquelle cet objet Connection représente une connexion.
+
+Expliquer la méthode getColumns de l’interface DatabaseMetaData. 
+Récupère une description des colonnes de table disponibles dans le catalogue spécifié.
+
+5 Jointure inter-bases
+
+Ecrire R1 en SQL.
+On ne peut pas le faire parce que SPONSOR est sur notre site 
+
+select s.nom, s.Nationalite, j.Nom, j.Nationalite
+from GAIN2 g, JOUEUR2 j,SPONSOR s
+where g.NuJoueur=j.NuJoueur and s.nom=g.Sponsor
+order by j.Nom;
+
+
+
