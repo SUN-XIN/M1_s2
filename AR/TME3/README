@@ -1,0 +1,11 @@
+Nom		SUN
+Prénom		Xin
+Num d'étudiant	3103249
+
+pour compiler:
+mpicc -o algoAR algoAR.c
+
+pour executer:
+mpirun -np NBR_PROC algoAR
+
+NBR_PROC est le nombre de processus total, il est correspond la variable NBR_PROC(ligne 7) dans mes codes

@@ -1,0 +1,13 @@
+Nom		SUN
+Prénom		Xin
+Num d'étudiant	3103249
+
+pour compiler:
+mpicc -o arbre arbre.c
+mpicc -o echoBIS echoBIS.c
+
+pour executer:
+mpirun -np 7 arbre
+mpirun -np 7 echoBIS
+
+pour EX2, mon initiateur est site 2(#define INITIATEUR 2), on peut changer à i [1,2...6]

@@ -1,0 +1,12 @@
+Nom		SUN
+Prénom		Xin
+Num d'étudiant	3103249
+
+pour compiler:
+mpicc -o phase phase.c
+
+pour executer:
+mpirun -np 7 phase
+
+Mon initiateur est site 3(#define INITIATEUR 3), on peut changer à i [1,2...6]
+Et j'initialise DIAMETRE à 5
